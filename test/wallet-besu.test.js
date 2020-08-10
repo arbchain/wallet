@@ -2,7 +2,7 @@ const assert = require('assert')
 const besuFunctions = require('../lib/wallet-besu.js')
 
 it('should create besu-wallet', async () => {
-    const status = await besuFunctions.createUserWallet("password", "orionKey123")
+    const status = await besuFunctions.create("password", "orionKey123")
     assert.strictEqual(status, true)
 })
 
@@ -18,8 +18,8 @@ it('should add account with private key', async () => {
 })
 
 it('should get all accounts', async () => {
-    const totalAccount = await besuFunctions.walletLogin("password")
-    assert.strictEqual(totalAccount, 3)
+    const totalAccount = await besuFunctions.login("password")
+    assert.strictEqual(totalAccount.length, 3)
 })
 
 
