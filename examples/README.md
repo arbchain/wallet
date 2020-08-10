@@ -1,6 +1,6 @@
 ## Wallet Example
 This folder contains a simple react application demonstrating 
-different features provided in **wallet.js**.
+different features provided in **wallet-besu package**.
 
 ## Quick Start
 
