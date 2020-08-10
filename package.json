@@ -1,36 +1,34 @@
 {
-  "name": "wallet",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "web3": "1.2.6",
-    "eth-light": "^2.5.11"
-  },
+  "name": "wallet-besu",
+  "version": "1.0.2",
+  "description": "A wallet to store user private keys in encrypted format on browser",
+  "main": "lib/wallet-besu.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "mocha --require mock-local-storage"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "web3": "1.2.6",
+    "eth-light": "^2.5.11",
+    "mocha": "^8.1.1",
+    "mock-local-storage": "^1.1.15"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arbchain/wallet.git"
+  },
+  "files": [
+    "examples/",
+    "lib/",
+    "tests/",
+    "README.md"
+  ],
+  "keywords": [
+    "wallet",
+    "web3",
+    "ethereum",
+    "blockchain",
+    "eth-lightwallet"
+  ],
+  "author": "Consenso Labs",
+  "license": "MIT"
 }
